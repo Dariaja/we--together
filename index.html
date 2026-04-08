@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2 года вместе</title>
+  
+  <!-- Google Fonts: романтичный + аккуратный -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HERO: фон задаётся в style.css (images/hero.jpg) -->
+  <header class="hero" id="top">
+    <div class="container1">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content reveal">
+      <p class="eyebrow">Годовщина наших отношений</p>
+      <h1>2 года вместе <span class="heart emoji-heart">💗</span></h1>
+      <p class="subtitle">Спасибо за каждый день, за тепло и за наше «мы» — которое становится только крепче.</p>
+      <div class="hero__actions">
+        <button class="btn" data-scroll="#story">Смотреть историю</button>
+        <span class="note">12.04.2024 — ∞</span>
+      </div>
+    </div>
+    <button class="scroll-hint" data-scroll="#story" aria-label="Прокрутить вниз">
+      <span></span>
+    </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Наша история (данные редактируются в script.js) -->
+    <section class="section" id="story">
+      <div class="container">
+        <h2 class="section__title reveal">Наша история</h2>
+        <p class="section__subtitle reveal">Небольшая лента моментов, которые навсегда в сердце.</p>
+
+        <!-- Таймлайн заполняется из script.js -->
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- Галерея (данные редактируются в script.js) -->
+    <section class="section section--soft" id="gallery">
+      <div class="container">
+        <h2 class="section__title reveal">Галерея</h2>
+        <p class="section__subtitle reveal">Нажми на фото, чтобы увидеть его крупнее.</p>
+
+        <!-- Галерея заполняется из script.js -->
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- Наши моменты (данные редактируются в script.js) -->
+    <section class="section" id="moments">
+      <div class="container">
+        <h2 class="section__title reveal">Наши моменты</h2>
+        <p class="section__subtitle reveal">Маленькие истории, из которых сложилась большая любовь.</p>
+
+        <!-- Карточки заполняются из script.js -->
+        <div class="cards" id="momentsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Финальный блок -->
+     
+    <section class="section section--final" id="final">
+      <div class="container1">
+      <div class="container final">
+        <h2 class="section__title reveal">Спасибо, что ты рядом</h2>
+        <p class="final__text reveal">
+          Каждый день с тобой — как тёплое утро весной. Спасибо за улыбки, поддержку и наши мечты.
+          Пусть впереди будет ещё больше путешествий, смеха и нежности.
+        </p>
+        <div class="hearts hearts--emoji" aria-hidden="true">
+          <span>💗</span><span>💗</span><span>💗</span><span>💗</span><span>💗</span>
+        </div>
+      </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <!-- Режим выбирается в script.js (FOOTER_MODE) -->
+      <div class="footer__typing" data-text="Спасибо тебе за каждую улыбку, каждую поддержку и каждый день рядом. Я тебя очень люблю 💗"></div>
+      <div class="footer__pulse" aria-hidden="true">
+        <span class="footer__heart">💗</span>
+      </div>
+    </div>
+  </footer>
+  <!-- Лайтбокс -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Предыдущее фото">‹</button>
+    <button class="lightbox__nav lightbox__next" aria-label="Следующее фото">›</button>
+    <img class="lightbox__img" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
